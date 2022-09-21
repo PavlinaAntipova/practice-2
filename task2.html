@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/task2.css">
+    <title>Task 2</title>
+</head>
+<body>
+    <header>
+        <h1>Let's create some nice forms</h1>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+            <form action="action.php" method="get" autocomplete="off" target="_blank">
+                <fieldset>
+                    <legend>Персональні дані:</legend>
+                    <label for="name">Ім'я:*</label>
+                    <input id="name" type="text" required autocomplete="on" maxlength="20" autofocus>
+                    <label for="surname">Прізвище:*</label>
+                    <input id="surname" type="text" required autocomplete="on" maxlength="20">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" required autocomplete="on" placeholder="myemail@example.com">
+                    <label for="email">Телефон:</label>
+                    <input id="phone" type="tel" autocomplete="on" value="+38 ">
+
+                </fieldset>
+                <fieldset>
+                    <legend>Тестові питання</legend>
+                    <p>Спробуйте відповісти на деякі питання про <abbr title="HyperText Markup Language">HTML</abbr>:</p>
+            
+                    <p><strong>Питання 1.</strong>
+                        <code>&lt;hr &#47;&#62;</code>
+                        - це порожній елемент HTML
+                    </p>
+                    <input type="radio" name="question1" id="v1_1" value="true">
+                    <label for="v1_1">Правда</label>
+                    <input type="radio" name="question1" id="v1_2" value="false">
+                    <label for="v1_2">Хиба</label>
+                    <input type="radio" name="question1" id="v1_3" value="depence">
+                    <label for="v1_3">Залежно від коду, у якому використано</label>
+            
+                    <p><strong>Питання 2.</strong> Оберіть із наведених по<del>п</del>рожні теги HTML?</p>
+                    <input type="checkbox" id="v2_1" value="table" name="table">
+                    <label for="v2_1">table</label>
+                    <input type="checkbox" id="v2_2" value="br" name="br">
+                    <label for="v2_2">br</label>
+                    <input type="checkbox" id="v2_3" value="strong" name="strong">
+                    <label for="v2_3">strong</label>
+            
+                    <p><strong>Питання 3.</strong> Оберіть символ, з якого починається код введення спецсимволів у HTML?</p>
+                    <label for="question3"></label>
+                    <select name="question3" id="question3">
+                        <option value="ampersand">&#38;</option>
+                        <option value="dollar" selected>&#36;</option>
+                        <option value="apostrophe">&#39;</option>
+                        <option value="quot">&#34;</option>
+                    </select>
+            
+                    <p><strong>Питання 4.</strong> Який тег дозволяє визначити заголовок сторінки, що буде відображаетись на вкладці
+                        браузера?</p>
+                        <label for="question4">Оберіть зі списку, або введіть самостійно:</label>
+                    <input id="question4" list="titles" type="text" maxlength="10" size="50">
+                    <datalist id="titles">
+                        <option value="target" />
+                        <option value="table" />
+                        <option value="name" />
+                        <option value="header" />
+                    </datalist>
+            
+                    <p><strong>Питання 5.</strong> Скільки рівнів заголовків має HTML5?</p>
+                    <label for="question5">Введіть додатнє ціле число:</label>
+                    <input type="number" min="1" step="1" id="question5">
+
+                    <p><strong>Питання 6.</strong> Яка дата представлення HTML 5.3?</p>
+                    <label for="question6">Введіть дату (день, місяць та рік):</label>
+                    <input type="date" id="question6">
+            
+                </fieldset>
+                <button type="submit"><img src="./images/submit_button.png" alt="submit button"></button>
+            </form>
+            </div>
+        </section>
+        
+    </main>
+    
+</body>
+</html>
